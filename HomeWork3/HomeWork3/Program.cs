@@ -10,20 +10,18 @@ namespace HomeWork3
     {
         static void Main()
         {
-            // all the talking should be done in a Mr. T voice
+           
 
-            Console.Write("Input a number of seconds, fool! Make it a big number, but keep it under 2 billion!: ");
-            string input = Console.ReadLine();
-            int sec = int.Parse(input);
-            int min = sec / 60;
-            int hrs = min / 60;
-            int day = hrs / 24;
-
+            Console.Write("Input a positive number... like an integer number.... a whole number.... like 1, 2, or 4.... keep it small though: ");
+            int input = int.Parse(Console.ReadLine());
+            int factorial = 1;
+            for (int i = 1; i <= input; i++)
+            {
+                factorial *= i;
+            }
             Console.WriteLine("");
-            Console.WriteLine("I pity the fact that you put in {0} seconds!", sec);
-            Console.WriteLine("Can you even count to {0} minutes?", min);
-            Console.WriteLine("That's equal to {0} hours man!", hrs);
-            Console.WriteLine("{0} days is a long time to feel the pain!", day);
+            Console.WriteLine("Like, you entered {0} man.....", input);
+            Console.WriteLine("Thats like {0}, after you do some math....", factorial);
             Console.ReadLine();
 
            
